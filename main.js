@@ -1,5 +1,5 @@
 let [milliseconds, seconds, minutes, hours] = [0, 0, 0, 0];
-let timeRef = document.querySelector(",timer-display");
+let timeRef = document.querySelector(".timer-display");
 let int = null;
 
 document.getElementById("start-timer").addEventListener("click", () => {
@@ -14,7 +14,7 @@ document.getElementById("pause-timer").addEventListener("click",
         clearInterval(int);
     });
 
-document.getElementById("restart-timer").addEventListener("click",
+document.getElementById("reset-timer").addEventListener("click",
     () => {
         clearInterval(int);
         [milliseconds, seconds, minutes, hours] = [0, 0, 0, 0];
